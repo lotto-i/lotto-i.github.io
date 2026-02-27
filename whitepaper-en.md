@@ -1,6 +1,7 @@
 ---
 layout: default
 title: LOTTOi Public Verification Structure Whitepaper (English Version)
+permalink: /whitepaper-en.html
 ---
 
 # LOTTOi Public Verification Structure Whitepaper
