@@ -1,0 +1,1 @@
+# lotto-i.github.io
