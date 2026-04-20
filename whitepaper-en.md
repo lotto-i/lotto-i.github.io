@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [LOTTOi](https://www.lottoi.kr) Public Verification Structure Whitepaper (English Version)
+title: "[LOTTOi](https://www.lottoi.kr) Public Verification Structure Whitepaper (English Version)"
 permalink: /whitepaper-en.html
 ---
 
