@@ -10,7 +10,7 @@ permalink: /whitepaper-en.html
 ---
 
 > **Since Feb 8, 2025**  
-> **LOTTOi is the world’s first lottery information platform to implement a public verification system integrated with external global platforms (Google & GitHub).**
+> **LOTTOi is the world’s first to design and operate a public verification system integrated with external global platforms (Google, GitHub, etc.).**
 
 ---
 
