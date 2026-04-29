@@ -27,7 +27,7 @@ This system ensures that **anyone can independently verify** whether those recor
 [LOTTOi](https://www.lottoi.kr)’s system is built on the following principles to ensure "Transparency through Traceability":
 
 - **World’s First External Attribution:** Records are stored in third-party systems before the draw, ensuring the operator cannot manipulate the timing.
-- **Inability to Conceal Modifications:** All changes and their specific timestamps are permanently logged via Google/GitHub, making it **technically impossible to hide alterations**.
+- **Inability to Conceal Modifications:** All changes and their specific timestamps are logged via Google/GitHub, making it **technically impossible to hide alterations**.
 - **Democratized Verification:** Verification is performed by **anyone (the public)**, not the operator.
 
 Rather than claiming to prevent modifications through a closed system, [LOTTOi](https://www.lottoi.kr) is structurally designed so that **any modification, if it occurs, is fully exposed and traceable through global standard logs**.
