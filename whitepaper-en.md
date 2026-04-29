@@ -132,11 +132,11 @@ This whitepaper is intended for the following purposes:
 
 ## 11. Conclusion
 
-[LOTTOi](https://www.lottoi.kr) believes in a simple but powerful principle: **Before we record the results, we record the process of preparing to record them.**
+[LOTTOi](https://lottoi.kr) believes in a simple but powerful principle: **Before we record the results, we record the process of preparing to record them.**
 
-**LOTTOi is not content with being the only trusted service.** Our vision is for this public verification structure to become the standard for all lottery services worldwide, creating a marketplace free from any suspicion of manipulation. 
+> **"The sole objective of publishing LOTTOi’s Public Verification Whitepaper is to establish our verification system as a global standard, creating a transparent lottery market free from any suspicion of manipulation."**
 
-We hope our public verification model evolves beyond being a unique feature of LOTTOi and becomes a trusted standard for the entire lottery industry. LOTTOi will continue to honor the weight of every record to ensure a transparent environment for all users.
+We hope our public verification model evolves into a trusted standard for the entire lottery industry worldwide. LOTTOi will continue to honor the weight of every record to ensure a transparent environment for all users.
 
 ---
 
