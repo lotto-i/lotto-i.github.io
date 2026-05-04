@@ -286,7 +286,7 @@ If a URL change occurs after the draw, the verification standard and change hist
 
 ## 12. Why LOTTOi Designed This Public Verification Method
 
-After encountering lottery-related services, LOTTOi identified a lack of standards for judging actual service value.
+After encountering lottery-related services, LunaSG(루나에스지) identified a lack of standards for judging actual service value.
 
 Many services explain their results, but there were not enough standards that users could directly check.  
 LOTTOi judged that explanations such as photos, testimonials, and interviews alone were not enough to confirm whether generated numbers actually existed before the draw.
