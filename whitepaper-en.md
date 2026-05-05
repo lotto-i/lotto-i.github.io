@@ -315,12 +315,9 @@ Because the actual creation time and change history remain on external platforms
 
 LOTTOi’s current public verification chain is operated mainly through Google document records and GitHub URL anchoring.
 
-In the future, LOTTOi may also consider adding other external public record methods such as GitLab.
+This whitepaper explains the operating standards and verification methods of the public verification chain currently applied by LOTTOi.
 
-However, this whitepaper does not describe future plans as confirmed features.  
-At the current stage, it only states that the public verification chain is a structure that can be expanded by adding external public record methods.
-
-Whether and how to expand the structure will be reviewed based on actual operating stability, user understanding, and the reliability of external platform records.
+Whether and how to expand the structure will be reviewed based on operating stability, user understanding, and the reliability of external records.
 
 ---
 
