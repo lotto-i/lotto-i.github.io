@@ -4,365 +4,367 @@ title: "[World’s First External Public Verification · Public Verification Cha
 permalink: /whitepaper-en.html
 ---
 
-# [World-First-Level External Public Verification Framework] [LOTTOi](https://www.lottoi.kr) Result Public Verification Whitepaper
+# [World-First-Level External Public Verification Framework] [LOTTOi](https://www.lottoi.kr) Public Result Verification Whitepaper
 *(LOTTOi Public Verification Framework Whitepaper – EN)*
 
 ---
 
 > **Since 2025. 02. 08.**  
-> [LOTTOi](https://www.lottoi.kr) has applied a Google-based external public verification method since February 8, 2025. Under this method, generated numbers are not kept only inside the internal system, but are recorded in an external public document before the draw.
+> [LOTTOi](https://www.lottoi.kr) has applied a Google-based external public verification method since February 8, 2025, recording generated numbers in an external public document before the draw instead of keeping them only inside its internal system.
 >
-> Since January 29, 2026, LOTTOi has also operated an external public verification framework in which the Google document URL for each round is first fixed on GitHub before the draw. This allows anyone to check whether the verification URL disclosed after the draw was arbitrarily changed later.
+> Since January 29, 2026, LOTTOi has operated an external public verification framework that anchors each round’s Google document URL on GitHub before the draw, allowing anyone to check whether the verification URL disclosed after the draw was arbitrarily changed afterward.
 >
-> In this whitepaper, “world-first-level” does not refer to the entire lottery service, winning probability, prediction performance, profit, or result guarantee.  
-> It refers to LOTTOi’s judgment regarding a public verification structure in which generated numbers are recorded externally in a Google document before the draw, the corresponding Google document URL is pre-fixed on GitHub, and the two records can be cross-checked after the draw.
+> The term “world-first-level” in this whitepaper does not refer to lottery services as a whole, winning probability, prediction performance, or profit guarantees.  
+> It refers to a public verification structure in which generated numbers are recorded in a Google document before the draw, the corresponding Google document URL is anchored on GitHub in advance, and the two records can be cross-checked after the draw.
 >
-> Based on publicly available web research, LOTTOi has not identified an identical prior case to date. For this reason, LOTTOi regards this structure as a world-first-level external public verification framework.
+> Based on public web research, LOTTOi has not identified an identical prior case to date, and therefore describes this structure as a world-first-level external public verification framework based on the research results and its operating structure.
 
 ---
 
 ## 1. Document Overview
 
-[LOTTOi](https://www.lottoi.kr) designs and operates a public verification method that records pre-draw data in an external public document so that anyone can compare the prior existence of generated numbers with round results.
+[LOTTOi](https://www.lottoi.kr) designs and operates a public verification method that records pre-draw data in an external public document, so that anyone can compare the prior existence of generated numbers with the result of each lottery round.
 
-Since February 8, 2025, LOTTOi has applied a Google-based external public verification method.  
->The basic principle of this method is that generated numbers are not stored only inside the internal system, but are recorded in an external public document before the draw.
+LOTTOi has applied a Google-based external public verification method since February 8, 2025.  
+The basic principle of this method is not to keep generated numbers only inside the internal system, but to record them in an external public document before the draw.
 
-Since January 29, 2026, LOTTOi has strengthened its verification standard by operating an external public verification framework in which the Google document URL for each round is first fixed on GitHub before the draw.
+Since January 29, 2026, LOTTOi has operated an external public verification framework that further strengthens the verification standard by anchoring each round’s Google document URL on GitHub before the draw.
 
-LOTTOi’s current public verification framework consists of two core standards.
+LOTTOi’s current public verification framework consists of the following two standards.
 
-1. The actual generated-number record is stored in a Google document.
-2. The corresponding Google document URL is first fixed on GitHub before the draw.
+1. The actual generated number records are stored in a Google document.
+2. The corresponding Google document URL is anchored on GitHub before the draw.
 
-This allows anyone, after the draw, to check whether the disclosed Google document URL was arbitrarily changed later, and to compare it with the actual record inside the Google document.
+Through this structure, anyone can check whether the Google document URL disclosed after the draw was arbitrarily changed afterward, and compare it with the actual records in the Google document.
 
-This whitepaper explains LOTTOi’s public verification principles, operating standards, the roles of Google documents and GitHub, and the scope and limitations of the phrase “world-first-level external public verification framework.”
-
----
-
-## 2. Scope of the Phrase “World-First-Level”
-
-LOTTOi does not use the phrase “world-first-level” to refer to the entire lottery service or to lottery prediction performance.
-
-In this whitepaper, “world-first-level” refers to the following public verification structure.
-
-First, generated numbers are recorded in an external public document such as a Google document before the draw, so that anyone can directly verify the record afterward regardless of whether they used the service.
-
-Second, the Google document URL that contains the actual generated-number record is first fixed on GitHub before the draw, so that anyone can check through GitHub commit history whether the verification URL disclosed after the draw was changed later.
-
-Third, the actual generated-number record in the Google document and the pre-fixed URL record on GitHub can be cross-checked together, allowing anyone to review the existence of the pre-draw record and whether any post-draw changes occurred.
-
-Based on publicly available web research, LOTTOi has not identified an identical prior case to date. For this reason, LOTTOi regards the above structure as a world-first-level external public verification framework.
-
-However, this phrase does not imply winning probability, prediction performance, profit, or result guarantee.  
->It is a judgment about a public verification design method that combines pre-draw records with an external verification standard.
+This whitepaper explains LOTTOi’s public verification principles, operating standards, the roles of Google documents and GitHub, and the scope and limitations of the expression “world-first-level external public verification framework.”
 
 ---
 
-## 3. Key Definitions
+## 2. Why LOTTOi Designed This Public Verification Method
 
-### 3-1. External Public Verification
+LunaSG focused on the possibility that, when reviewing lottery-related services, there may not be enough publicly verifiable standards for users to assess the actual value of a service.
 
-External public verification is a method designed so that anyone can directly check whether generated numbers were recorded in an external public document before the draw, and whether the record was changed after the draw.
+In general, lottery-related services present their performance through various methods such as result explanations, reviews, images, and interviews.  
+However, these methods alone may make it difficult for users to directly verify whether the generated numbers actually existed before the draw and whether the records were changed afterward.
 
-LOTTOi does not keep generated numbers only inside its internal system. It records them in an external public document before the draw so that post-draw verification is possible.
+For this reason, LOTTOi began reviewing ways to establish technically verifiable public verification standards.
 
-### 3-2. Public Verification Framework
+As a result, LOTTOi designed a public verification method that records generated numbers in an external public document before the draw, and allows the existence time and public reference point of those records to be cross-checked through external records.
 
-A public verification framework is the overall structure that allows anyone to confirm, through external records, when, where, and under what standard a pre-draw record was created.
-
-[LOTTOi’s public verification framework](https://www.lottoi.kr) separates the roles of Google documents and GitHub.
-
-The Google document stores the actual generated-number record.  
-GitHub records the corresponding Google document URL before the draw.
-
-Therefore, after the draw, anyone can cross-check the Google document and GitHub records to verify whether the disclosed verification URL and generated-number record existed before the draw and whether any post-draw change occurred.
-
-### 3-3. The Phrase “Public Verification Chain”
-
-When this whitepaper uses the phrase “public verification chain,” it does not mean blockchain.
-
-Here, “chain” means an external record verification structure in which Google document records and GitHub records are sequentially linked and cross-checked.
-
-To reduce misunderstanding, this whitepaper primarily uses the phrases “public verification framework” or “cross-check public verification structure.”
+This awareness became a major background for LunaSG’s design and operation of LOTTOi.
 
 ---
 
-## 4. Definition of External Public Verification
+## 3. Scope of the “World-First-Level” Expression
 
-LOTTOi’s external public verification is a method designed so that anyone can directly check whether generated numbers were recorded in an external public document before the draw, and whether the record was changed after the draw.
+LOTTOi does not use the expression “world-first-level” to refer to lottery services as a whole or to prediction performance for winning numbers.
 
-In a typical internal-record method, a person who did not use the service cannot easily verify directly whether a given number actually existed before the draw.
+The expression “world-first-level” in this whitepaper refers to the following public verification structure.
 
-To reduce this limitation, LOTTOi records generated numbers in an external public document and allows anyone to check the record and change history after the draw.
+First, generated numbers are recorded in an external public document such as a Google document before the draw, allowing anyone to check them afterward regardless of whether they use the service.
 
-The core principles of external public verification are as follows.
+Second, the Google document URL containing the actual generated number records is anchored on GitHub before the draw, allowing anyone to check through GitHub commit history whether the verification URL disclosed after the draw was changed afterward.
+
+Third, the actual generated number records in the Google document and the pre-draw URL anchoring record on GitHub can be cross-checked together, allowing anyone to review the existence of pre-draw records and whether post-draw changes occurred.
+
+Based on public web research, LOTTOi has not identified an identical prior case to date, and therefore describes this structure as a world-first-level external public verification framework based on the research results and its operating structure.
+
+The research standards and first-round comparison results for prior cases are explained separately in the later section, “Prior Case Research Standards and First-Round Comparison Table.”
+
+However, this expression does not imply any guarantee of winning probability, prediction performance, profit, or results.  
+It is an explanation of a public verification design method that combines pre-draw records with external verification standards.
+
+---
+
+## 4. Definitions of Key Terms
+
+### 4-1. External Public Verification
+
+External public verification is a method designed so that anyone can directly check whether generated numbers were recorded in an external public document before the draw, and whether those records were changed after the draw.
+
+LOTTOi does not keep generated numbers only inside its internal system. It operates by leaving them in an external public document before the draw, so that post-draw verification is possible.
+
+### 4-2. Public Verification Framework
+
+A public verification framework refers to the overall structure configured so that anyone can check when, where, and under what standard a pre-draw record was made through external records.
+
+The [LOTTOi public verification framework](https://www.lottoi.kr) separates the roles of Google documents and GitHub.
+
+The actual generated number records are stored in a Google document.  
+The corresponding Google document URL is recorded on GitHub before the draw.
+
+Therefore, after the draw, anyone can cross-check the Google document and GitHub records to verify the prior existence of the disclosed verification URL and generated number records, as well as whether any post-draw changes occurred.
+
+### 4-3. Meaning of the Term “Public Verification Chain”
+
+When this whitepaper uses the expression “public verification chain,” it does not refer to blockchain.
+
+The “chain” here refers to an external record verification structure in which Google document records and GitHub records are connected sequentially and can be cross-checked.
+
+To reduce misunderstanding, this whitepaper generally uses the terms “public verification framework” or “cross-checkable public verification structure.”
+
+---
+
+## 5. Basic Principles of External Public Verification
+
+LOTTOi’s external public verification is a method designed so that anyone can directly check whether generated numbers were recorded in an external public document before the draw, and whether those records were changed after the draw.
+
+In a typical internal record system, it is difficult for anyone, regardless of whether they use the service, to directly confirm whether the numbers actually existed before the draw.
+
+To reduce this limitation, LOTTOi records generated numbers in an external public document and allows anyone to check the records and change history after the draw.
+
+The key principles of external public verification are as follows.
 
 - Generated numbers are not kept only inside the internal system.
-- They are recorded in an external public document before the draw.
-- After the draw, anyone can directly check the record regardless of whether they used the service.
-- If a change occurs, the change time and changed content can be checked.
+- Generated numbers are recorded in an external public document before the draw.
+- After the draw, anyone can directly check the records regardless of whether they use the service.
+- If a change occurs, the time and content of the change can be checked.
 
-LOTTOi’s goal is not simply to prevent all modification of records.  
->The key point is to make it impossible to hide the time and content of a change if a change occurs.
+LOTTOi does not simply aim to prevent records from being modified.  
+The key point is to make it impossible to hide the time and content of a change if a change occurs.
 
-Through this, LOTTOi reduces post-draw manipulation concerns and provides a verification standard that anyone can directly check regardless of service usage.
+Through this, LOTTOi provides a verification standard that reduces post-draw manipulation concerns and allows anyone to check the records directly, regardless of whether they use the service.
 
 ---
 
-## 5. Overall Structure of the Public Verification Framework
+## 6. Overall Structure of the Public Verification Framework
 
-LOTTOi’s public verification framework is structured as follows in actual operation.
+LOTTOi’s public verification framework is structured as follows based on actual operating standards.
 
 ```text
-[Pre-creation of a round-specific public Google document]
-└ Create the external public document in which actual generated-number records will be stored
-└ The document creation time and permission-change history are recorded by the Google system
+[Pre-creation of a Google public document for each round]
+└ Create an external public document where actual generated number records will be stored
+└ The document creation time and permission change history are recorded by Google systems
 ↓
-[GitHub URL pre-fixing]
-└ Record the Google document URL for the corresponding round on GitHub before the draw
-└ The GitHub commit history can confirm the prior existence time of the URL
+[GitHub URL anchoring]
+└ Record the Google document URL for the round on GitHub before the draw
+└ The GitHub commit history allows verification of the URL’s pre-draw existence time
 ↓
-[Generated-number finalization and system closing]
+[Generated numbers finalized and system closed]
 ↓
 [On draw day, after lottery purchase closing and before the draw begins]
-└ Store generated-number data in the public Google document
-└ The storage time and change history are recorded by the Google system
+└ Store generated number data in the Google public document
+└ The storage time and change history are recorded by Google systems
 ↓
-[Lottery draw]
+[Lottery draw proceeds]
 ↓
 [Post-draw verification by anyone]
-└ Check on GitHub whether the Google document URL was fixed before the draw
-└ Check the generated-number record and version history in the Google document
+└ Check on GitHub whether the Google document URL was anchored before the draw
+└ Check generated number records and version history in the Google document
 └ Check whether the data was modified after the draw
 ```
 
-In this structure, Google documents and GitHub have separate roles.
+In this structure, Google documents and GitHub have different roles.
 
-The Google document is the standard for checking the actual generated-number record.  
-GitHub is the standard for checking whether the corresponding Google document URL was fixed before the draw.
+The Google document is the standard for checking the actual generated number records.  
+GitHub is the standard for checking whether the corresponding Google document URL was anchored before the draw.
 
-When both records are cross-checked, the existence of the pre-draw record and whether a post-draw change occurred can be confirmed more clearly.
+By comparing these two records together, the existence of pre-draw records and any post-draw changes can be verified more clearly.
 
 ---
 
-## 6. Role of the Google Document
+## 7. Role of the Google Document
 
-The Google document is the external public document in which the actual generated-number record is stored in LOTTOi’s public verification method.
+The Google document is the external public document where actual generated number records remain in LOTTOi’s public verification method.
 
-LOTTOi creates a Google document for each round and records the required generated-number data in that document before the draw.
+LOTTOi creates a Google document for each round and records the necessary generated number data in that document based on the pre-draw standard.
 
-The Google document can provide the following information.
+The Google document allows the following items to be checked.
 
-- Actual generated-number record
+- Actual generated number records
 - Document creation time
 - Data storage time
-- Permission-change history
+- Permission change history
 - Version history
-- Whether post-draw modification occurred
+- Whether any modification occurred after the draw
 
-The core role of the Google document is to provide a standard for confirming whether actual generated numbers were recorded in an external document before the draw.
+The core role of the Google document is to provide a standard for checking whether the actual generated numbers were recorded in an external document before the draw.
 
-After the draw, anyone can review the Google document record and version history to check whether the data existed before the draw or whether it was changed after the draw.
+After the draw, anyone can review the records and version history of the Google document to check whether the data existed before the draw or whether it was changed after the draw.
 
 ---
 
-## 7. Role of GitHub
+## 8. Role of GitHub
 
-GitHub is not used merely as a record storage space.
+GitHub is not used simply as a record storage location.
 
-In LOTTOi’s public verification framework, GitHub’s core role is to fix the Google document URL as an external record before the draw.
+In the [LOTTOi public verification framework](https://www.lottoi.kr), the core role of GitHub is to anchor the Google document URL as an external record before the draw.
 
-The Google document stores the actual generated-number record.  
-GitHub stores the corresponding Google document URL before the draw.
+The actual generated number records are stored in a Google document.  
+The corresponding Google document URL is recorded on GitHub before the draw.
 
-Therefore, after the draw, anyone can directly check whether the Google document URL disclosed on the [LOTTOi official site](https://www.lottoi.kr) had already been recorded on GitHub before the draw.
+Therefore, anyone can directly check whether the Google document URL disclosed on the LOTTOi site after the draw had already been recorded on GitHub before the draw.
 
 GitHub records provide the following standards.
 
 - Whether the Google document URL was recorded before the draw
-- Whether that URL was later modified
+- Whether the URL was modified later
 - If it was modified, when the modification occurred
 - Whether the final confirmed URL existed before the draw
 
-The core verification standard is whether the Google document URL used as the final public verification standard was fixed on GitHub before the draw.
+The core verification standard is whether the Google document URL used as the final public verification standard was anchored on GitHub before the draw.
 
 ---
 
-## 8. Google Document Permission Operation
+## 9. Google Document Permission Operation Method
 
-LOTTOi operates Google documents so that pre-draw records and permission-change processes remain as external time-based records.
+LOTTOi operates Google documents so that pre-draw records and permission changes remain based on an external time standard.
 
-### 8-1. When the Document Is First Created
+### 9-1. When the Document Is First Created
 
-A round-specific Google document is created in advance.  
-The document creation time and later permission-change records remain in the Google system.
+A Google document for each round is created in advance.  
+The document creation time and later permission change records remain in Google systems.
 
-### 8-2. Operation on Draw Day
+### 9-2. Operation on Draw Day
 
-After lottery purchase closing, the necessary permission transition and data storage are carried out to store generated-number data.
+After lottery purchase closing, the necessary permission changes and data storage are carried out to store generated numbers.
 
-At this time, generated-number data is recorded in the Google document.  
+At this time, the generated number data is recorded in the Google document.  
 The storage time and later change history can be checked through the version history of the Google document.
 
-This operating method is designed to leave key moments where operator intervention may occur as external system records.
+This operation method is intended to record major points where operator intervention may occur in an external system.
 
 ---
 
-## 9. Post-Draw Verification Method
+## 10. Post-Draw Verification Method
 
-Anyone can directly check data integrity and the public verification standard through the following paths.
+Anyone can directly check the integrity of the data and the public verification standard through the following paths.
 
-### 9-1. Checking GitHub Records
+### 10-1. Checking GitHub Records
 
-On GitHub, the following points are checked.
+On GitHub, the following items can be checked.
 
 - Whether the Google document URL was recorded before the draw
-- Whether the URL was later modified
+- Whether the URL was modified later
 - If it was modified, when the modification occurred
 - Whether the final confirmed URL existed before the draw
 
-GitHub’s core role is to provide an external reference point showing that the Google document URL was fixed before the draw.
+The core role of GitHub is to provide an external reference point where the Google document URL was anchored before the draw.
 
-### 9-2. Checking the Google Document
+### 10-2. Checking the Google Document
 
-In the Google document, the following points are checked.
+In the Google document, the following items can be checked.
 
-- Actual generated-number record
+- Actual generated number records
 - Document creation time
 - Data storage time
 - Version history
-- Whether post-draw modification occurred
+- Whether any modification occurred after the draw
 
-In particular, it is important to check whether the record at the pre-draw reference time matches the result currently disclosed.
+In particular, it is important to check whether the record based on the pre-draw standard matches the result currently disclosed.
 
-### 9-3. Cross-Checking the Two Records
+### 10-3. Comparing the Two Records
 
-GitHub and Google documents have separate roles.
+GitHub and Google documents have different roles.
 
-GitHub is the standard for confirming whether the URL was fixed before the draw.  
-The Google document is the standard for checking the actual generated-number record.
+GitHub is the standard for checking whether the URL was anchored in advance.  
+The Google document is the standard for checking the actual generated number records.
 
-When both records are cross-checked, the existence of the pre-draw record and whether a post-draw change occurred can be confirmed more clearly.
+By comparing these two records together, the existence of pre-draw records and any post-draw changes can be verified more clearly.
 
 ---
 
-## 10. Standards Regarding Modifiability and Change History
+## 11. Standards for Modification Possibility and Change History
 
-It is technically impossible to completely rule out the possibility that a public document may be modified after the draw.
+It is not technically possible to completely rule out the possibility that a public document may be modified after the draw.
 
-However, in LOTTOi’s public verification framework, the important standard is not a claim that modification is absolutely impossible.  
->The important point is that, if a modification occurs, its trace cannot be hidden.
+However, the important standard in LOTTOi’s public verification framework is not a claim that modification is impossible.  
+The important point is that if a modification occurs, the traces of that modification cannot be hidden.
 
-The Google document may retain the following information.
+The Google document may contain the following information.
 
 - Change time
-- Changed content
+- Change content
 - Change order
 - Document version history
 
-GitHub may retain the following information.
+GitHub may contain the following information.
 
 - Initial recording time of the Google document URL
 - URL modification time
-- Content before and after modification
+- Content before and after the modification
 - Commit history
 
-Therefore, anyone can check through post-draw verification whether data was changed after the draw time.
+Therefore, anyone can verify afterward whether the data was changed after the draw time.
 
 LOTTOi does not claim that post-draw modification is impossible.  
->Instead, LOTTOi aims to provide a verification environment where post-draw modification can be checked through external records.
+Instead, LOTTOi aims to provide a verification environment where post-draw modification can be checked through external records.
 
 ---
 
-## 11. Operating Principles When a Modification Occurs
+## 12. Operating Principles When Operational Modifications Occur
 
-A GitHub record may be modified before the draw due to URL typos, document-link errors, or operating-input mistakes.
+GitHub records may be modified before the draw due to operational issues such as an incorrect URL entry, document connection error, or input mistake.
 
-In such cases, LOTTOi considers the following standards important.
+In this case, LOTTOi considers the following standards important.
 
 - Initial recording time
-- Time when the modification occurred
+- Modification time
 - URL before modification
 - URL after modification
 - Whether the final confirmed URL existed before the draw
 - Whether the modification was completed before the draw time
 
-The core verification standard is whether the Google document URL used as the final public verification standard was fixed on GitHub before the draw.
+The core verification standard is whether the Google document URL used as the final public verification standard was anchored on GitHub before the draw.
 
-If a URL change occurs after the draw, the verification standard and change details for that round must be checked separately.
-
----
-
-## 12. Why LOTTOi Designed This Public Verification Method
-
-LunaSG identified that, in lottery services, users often lack sufficient criteria to judge actual service value.
-
-Many services explain results, but users do not always have enough standards to verify them directly.  
-LOTTOi judged that photos, testimonials, and interviews alone make it difficult to confirm whether generated numbers actually existed before the draw.
-
-For this reason, LOTTOi began looking for a method that could technically prove facts.
-
-As a result, LOTTOi designed a public verification method that records generated numbers externally before the draw and allows the existence time and public standard of the record to be confirmed through external records.
-
-This problem awareness became a major background for LunaSG’s design and operation of LOTTOi.
+If a URL change occurs after the draw, the verification standard and change history for that round must be checked separately.
 
 ---
 
 ## 13. Technical Limitations and Operating Environment Notice
 
-External network delays, Google or GitHub platform outages, permission-change delays, or other force majeure factors may temporarily delay record creation or public standard confirmation.
+Due to unavoidable factors such as external network delays, Google or GitHub platform issues, or permission change delays, the timing of record creation or public standard confirmation may be temporarily delayed.
 
-The purpose of this structure is not to claim a perfect system without delay.
+The purpose of this structure is not to claim a perfect system without delays.
 
-The purpose is to ensure that, when delay or modification occurs, the fact remains in external records and can be checked afterward.
+Its purpose is to ensure that if delays or modifications occur, those facts remain in external records and can be checked afterward.
 
-Because the actual creation time and change history remain on external platforms, their time relationship with the draw time can be checked afterward.
-
----
-
-## 14. Prior-Case Research Criteria and First Comparison Table
-
-LOTTOi uses the phrase “world-first-level external public verification framework” in a limited sense. It is not used as an absolute advertising claim, but as a statement that, based on publicly available web research, LOTTOi has not identified an identical prior case.
-
-This section summarizes the first research criteria and comparison results for reviewing whether there are publicly available prior cases identical or similar to LOTTOi’s public verification framework.
-
-However, the comparison target of this whitepaper is not every number-recommendation business or every lottery-draw system.  
-The comparison target is **number-selection lottery number prediction, recommendation, and generation services or projects**.
-
-For domestic similar services, this public whitepaper avoids naming individual companies directly to prevent the text from appearing as comparative advertising or as a public targeting of specific operators. Instead, domestic services are summarized under the category “Domestic lottery number recommendation services in general.” Individual service names, URLs, screenshots, and verification dates are kept in a separate internal research log.
+Because the actual creation time and change history remain on external platforms, the time relationship with the draw can be checked afterward.
 
 ---
 
-### 14-1. Research Criteria
+## 14. Prior Case Research Standards and First-Round Comparison Table
 
-This first research was organized **as of May 2026**, and may be supplemented later as publicly available web data changes.
+LOTTOi uses the expression “world-first-level external public verification framework” in a limited sense, not as an absolute advertising claim, but to describe a structure for which an identical prior case has not been identified through public web research.
+
+This section summarizes the first-round research standards and comparison results used to review whether any identical or similar prior case to LOTTOi’s public verification framework exists in publicly available web materials.
+
+However, the comparison target of this whitepaper is not all number recommendation businesses or all lottery draw systems.  
+The comparison target is **number-selection-based lotto and lottery number prediction, recommendation, and generation services or projects**.
+
+For similar domestic services, this whitepaper does not list individual service names directly in the public comparison table in order to avoid unnecessary misunderstanding that could arise from naming specific businesses or appearing as comparative advertising. Individual service names, URLs, screenshots, confirmation dates, and related details are stored in a separate internal research log.
+
+---
+
+### 14-1. Research Standards
+
+This first-round research was organized based on information available as of **May 2026**, and may be supplemented later as publicly available web materials change.
 
 The research focuses on the following categories.
 
-1. Lottery/lotto number prediction services
-2. Lottery/lotto number recommendation services
-3. Lottery/lotto number generation programs
-4. Public GitHub lottery/lotto prediction code
-5. Google Sheets or external-document-based lottery/lotto analysis cases
-6. Number-selection lottery analysis and prediction apps
-7. Patents or system ideas related to lottery prediction
-8. Services claiming to publish or record prediction numbers before the draw
-9. Domestic lottery number recommendation and analysis service types
+1. Lotto/lottery number prediction services
+2. Lotto/lottery number recommendation services
+3. Lotto/lottery number generation programs
+4. Public GitHub lotto/lottery prediction code
+5. Google Sheets or external document-based lotto/lottery analysis cases
+6. Number-selection-based lottery analysis and prediction apps
+7. Lottery prediction-related patents or system ideas
+8. Services claiming to disclose or record prediction numbers before the draw
+9. Domestic lotto number recommendation and analysis service types
 10. Multilingual lottery number prediction and analysis projects
 
-The following categories are excluded from direct comparison or are treated only as reference areas.
+The following categories are excluded from direct comparison or are treated only as reference materials.
 
 1. Blockchain lottery systems that verify the fairness of the lottery draw itself
-2. General-purpose randomness verification structures such as Chainlink VRF or commit-reveal
-3. Third-party draw and audit services such as RANDOM.ORG
-4. General draw-verification systems for casinos, raffles, or promotions
-5. Sports score prediction, stock-number recommendation, and general AI number-generation services
+2. General-purpose random number verification structures such as Chainlink VRF and commit-reveal
+3. Third-party draw or audit services such as RANDOM.ORG
+4. General draw verification systems such as casino, raffle, and promotion systems
+5. Sports score prediction, stock number recommendation, and general AI number generation services
 
-These excluded categories may be adjacent cases in the broad sense of “verifiability,” but they differ in purpose and structure from the market LOTTOi compares itself with: **number-selection lottery number recommendation/generation services**.
+Although the excluded categories may be adjacent cases in the broad sense of “verifiability,” their purpose and structure differ from the market compared by LOTTOi: **number-selection-based lotto and lottery number recommendation/generation services**.
 
-The main search terms used in the research are as follows.
+The main search terms used in the research were as follows.
 
 | Language | Search Term |
 |---|---|
@@ -419,112 +421,112 @@ The main search terms used in the research are as follows.
 
 ---
 
-### 14-2. Criteria for Identical Cases
+### 14-2. Standards for Determining an Identical Case
 
-In this whitepaper, an “identical case” does not simply mean a case that predicts lottery numbers, publishes draw results, or uploads program code to GitHub.
+In this whitepaper, an “identical case” does not simply mean a case where lottery numbers are predicted, draw results are disclosed, or program code is uploaded to GitHub.
 
-Also, the comparison target of this whitepaper is not every number-recommendation business.  
-The comparison target is **the field of number-selection lottery number recommendation/generation services**.
+Also, the comparison target of this whitepaper is not all number recommendation businesses.  
+The comparison target is the **field of number-selection-based lotto and lottery number recommendation/generation services**.
 
-To be considered identical to LOTTOi, a case must satisfy all of the following conditions.
+To be considered identical to LOTTOi, the following conditions must be met together.
 
-1. It must be a service or project that provides recommended or generated numbers for a number-selection lottery.
+1. It must be a service or project that provides recommended or generated numbers for a number-selection-based lotto or lottery.
 2. The recommended or generated numbers must be finalized before the draw.
-3. Those numbers must not be stored only in an internal system, but must remain in an external public record.
-4. After the draw, anyone must be able to directly check that record.
-5. The time of recording or whether a post-draw change occurred must be checkable through an external record.
-6. The actual number record and the external reference point pointing to that record must be cross-checkable.
-7. Prior existence and post-draw change status must be checkable through different external systems, such as Google documents and GitHub commit history.
+3. The numbers must not be stored only inside an internal system, but must remain in an external public record.
+4. After the draw, anyone must be able to directly check the records.
+5. The record time or whether any post-draw change occurred must be verifiable through external records.
+6. The actual number records and the external reference point that points to those records must be mutually cross-checkable.
+7. Different external systems, such as a Google document and GitHub commit history, must be used to verify pre-draw existence and post-draw changes.
 
 LOTTOi’s reference structure is as follows.
 
 > **Google Document**  
-> Actual generated-number record
+> Actual generated number records
 >
 > **GitHub**  
-> The corresponding Google document URL is fixed before the draw
+> The corresponding Google document URL is anchored before the draw
 >
 > **Post-Draw Verification**  
-> Cross-check the Google document record and GitHub commit history
+> Cross-check the Google document records and GitHub commit history
 
-Therefore, a simple prediction codebase, simple number generator, statistical analysis tool, or post-draw result disclosure service may be classified as a similar case, but it is not considered identical unless all of the above conditions are satisfied.
+Therefore, simple prediction code, simple number generators, statistical analysis tools, and post-draw result disclosure services may be classified as similar cases, but they are not considered identical cases unless they meet all of the above conditions.
 
 ---
 
-### 14-3. First Similar-Case Comparison Table
+### 14-3. First-Round Similar Case Comparison Table
 
-This comparison table focuses on **number-selection lottery number prediction, recommendation, and generation services or projects**.
+This comparison table is organized around **number-selection-based lotto and lottery number prediction, recommendation, and generation services or projects**.
 
-Blockchain lotteries, Chainlink VRF, commit-reveal, RANDOM.ORG, and similar cases are adjacent technologies related to draw fairness or general-purpose randomness verification. However, they differ in purpose from LOTTOi’s service structure, which verifies the prior existence and post-draw change status of recommendation or generated numbers received by users. Therefore, they are excluded from this comparison table.
+Blockchain lotteries, Chainlink VRF, commit-reveal, RANDOM.ORG, and similar systems are adjacent technologies related to lottery draw fairness or general-purpose random number verification. However, because their purpose differs from LOTTOi’s service structure, which verifies the pre-draw existence and post-draw change history of the recommended or generated numbers received by users, they are excluded from this comparison table.
 
-Domestic similar services are categorized as “Domestic lottery number recommendation services in general” rather than being named individually in this public whitepaper. This is intended to reduce unnecessary misunderstanding that could arise from naming a specific company or appearing to make comparative advertising.
+Domestic similar services are categorized as “domestic lotto number recommendation services in general” rather than being listed by individual service names in the public whitepaper. This is intended to reduce unnecessary misunderstanding that could arise from naming specific businesses or appearing as comparative advertising.
 
-| Category | Case / Type | Confirmed Features | Similarity to LOTTOi | Difference from LOTTOi | Identical Case? |
+| Category | Case Name / Type | Identified Features | Similarity to LOTTOi | Difference from LOTTOi | Identical Case? |
 |---|---|---|---|---|---|
-| Reference Case | LOTTOi | Generated numbers are recorded in a Google document, the Google document URL is fixed on GitHub before the draw, and both records are cross-checked after the draw | Pre-draw external record, post-draw change-history check, publicly verifiable structure | Reference case | Reference case |
-| Domestic lottery number recommendation services in general | Lottery number recommendation and analysis services | Domestic service type that provides past winning-number analysis, number recommendation, statistics, and in some cases result disclosure | Similar in that it provides lottery number recommendation and analysis | No confirmed structure in which recommended numbers are recorded in an external public document before the draw and the reference point is pre-fixed on GitHub for post-draw cross-checking | Not identical |
-| GitHub prediction code | TensorFlow Lottery Prediction | RNN/LSTM-based lottery number prediction code repository | Similar topic of lottery number prediction | It publicly shares prediction code, but does not provide a structure for pre-draw external record keeping and post-draw change verification of recommended numbers | Not identical |
-| GitHub prediction code | Lottery Prediction with Machine Learning | Machine-learning project for predicting Mega Millions and Powerball numbers | Similar topic of lottery/lotto number prediction | Focused on code and models, and does not fix prediction results in an external record before the draw | Not identical |
-| GitHub prediction code | Loto_Ai_Prediction | Historical data collection, LSTM model training, and prediction-number output structure | Similar in using AI-based number prediction | No confirmed pre-draw external public record or GitHub URL pre-fixing verification framework | Not identical |
-| GitHub prediction code | LotteryPrediction | Repository related to lottery prediction programs or prediction methods | Similar topic of number prediction | Does not fix service operation results in a public document before the draw | Not identical |
-| GitHub prediction code | Lottery-Predict | Flask-based lottery number prediction web app | Similar in number prediction and web-service format | No pre-draw external record, change-history check, or cross-check structure | Not identical |
-| GitHub prediction code | National Lottery Generator | App structure that analyzes past draw data and generates numbers | Similar in past-data-based number generation | Does not verify recommended numbers through an external public document and GitHub commits | Not identical |
-| GitHub analysis app | Mega-Sena Analyzer | Brazilian Mega-Sena analysis app that imports past data and performs statistical analysis and strategy generation | Similar in statistical lottery analysis | Does not provide pre-draw external record keeping and post-draw change verification of recommendation results | Not identical |
-| General prediction site | UK49s / SA Lotto Prediction-type sites | Sites that analyze past data or use Excel/Google Sheets to create heat maps and related analysis | Some similarity in using Google Sheets or statistical analysis | Google Sheets is used as an analysis tool, not as a pre-draw record with GitHub cross-checking | Not identical |
-| Mobile app | Lotto Prediction Android app types | Apps that provide lottery number prediction or generation functions | Similar in number recommendation or prediction | No confirmed public verification framework, external record, or change-history cross-check structure | Not identical |
-| Spreadsheet product | Lotto prediction spreadsheet type | Excel or Google Sheets templates used for number analysis or prediction | Similar in using Google Sheets | Personal analysis tools, not a pre-draw external public record with GitHub pre-fixing | Not identical |
-| Patent / idea | KR20090129245A, Lottery Prediction Winning Number Provision System | Patent related to a lottery prediction service system that provides multiple prediction-number combinations | Similar in providing predicted number combinations | Does not include an external public document record, GitHub commit history, or post-draw change verification structure | Not identical |
-| Chinese-language prediction code | LottoProphet | Chinese lottery prediction project for SSQ and DLT using deep learning and conditional random fields | Similar in lottery number prediction and analysis | Closer to a prediction model or analysis app; no structure where recommended numbers are recorded in a Google document before the draw and the URL is pre-fixed on GitHub | Not identical |
-| Chinese-language analysis app | Lottery Analysis / 彩票数据分析 | Python/Streamlit project that collects and analyzes Chinese Welfare Lottery and Sports Lottery data and provides AI prediction features | Similar in lottery data collection, statistical analysis, and AI prediction | Analysis and prediction platform; not an external pre-draw record and GitHub cross-check verification framework | Not identical |
-| Chinese-language prediction system | gitmen-lottery / 彩票预测系统 | Web-service-type project using FastAPI, MySQL, Telegram integration, historical Chinese lottery lookup, prediction, and statistics | Similar in lottery prediction, statistics, and lookup system | No confirmed structure where prediction results are recorded in an external public document and verified through GitHub commit history | Not identical |
-| Chinese-language AI prediction code | Double-Color-Ball-AI | Chinese AI prediction project for Double Color Ball using multiple AI models and historical-data strategies | Similar in AI-based lottery number prediction | Focused on AI prediction generation and data validation, not on a Google document record and GitHub URL pre-fixing public verification framework | Not identical |
-| Japanese-language prediction code | numbers4_lstm | Japanese project attempting to predict Numbers4 winning numbers using LSTM and neural networks | Similar in number-selection lottery prediction | Prediction-code centered; no pre-draw external record or post-draw change verification structure | Not identical |
-| Japanese-language analysis code | Rosyuku/loto6 | GitHub project for analyzing or interpreting Japan’s Loto 6 | Similar in Loto number analysis | Closer to analysis code or material disclosure, not a Google document and GitHub cross-check verification framework | Not identical |
-| Japanese-language analysis content | Loto 6 statistical analysis tools and prediction content | Statistical analysis and prediction-support content or tools for Loto 6, Mini Loto, Loto 7, etc. | Similar in Japanese lottery number analysis and prediction | Content or analysis-tool type; does not fix service recommendation numbers in an external document before the draw | Not identical |
-| Spanish-language prediction code | ojaviva/lottery | Spanish-language project aimed at predicting future lottery winning numbers using machine learning | Similar in lottery number prediction models | Focused on model development and prediction, not on pre-draw external public records or post-draw change-history verification | Not identical |
-| Spanish-language prediction tool | KinielaGPT | Prediction tool using match data, probabilities, and contextual analysis for Quiniela prediction | Similar as a prediction model or recommendation tool | Sports/Quiniela prediction tool; not a pre-draw external verification structure for lottery recommendation numbers | Not identical |
-| French/European prediction code | Loto_Ai_Prediction | Project using machine learning such as LSTM to predict Loto numbers | Similar in Loto number prediction and historical-data learning | Prediction-code centered; does not verify pre-draw recommendation numbers through Google documents and GitHub records | Not identical |
-| Multilingual GitHub prediction group | GitHub lottery-prediction / loto topic repositories | Numerous repositories in different languages related to lottery, loto, lotto prediction, and analysis | Shows that lottery prediction code and analysis attempts exist globally | Most are limited to code, models, or analysis disclosure, with no confirmed external-record cross-check structure for prior existence and post-draw changes | Not identical |
+| Reference Case | [LOTTOi](https://www.lottoi.kr) | Generated numbers are recorded in a Google document, the corresponding Google document URL is anchored on GitHub before the draw, and the two records are cross-checked after the draw | Pre-draw external records, post-draw change history verification, verifiable by anyone | Reference case | Reference case |
+| Domestic lotto number recommendation services in general | Lotto number recommendation and analysis services | Domestic service type providing past winning number analysis, number recommendation, statistical information, and in some cases result disclosure | Similar in that they involve lotto number recommendation and analysis | No confirmed structure in which recommended numbers are recorded in an external public document before the draw, the reference point is anchored on GitHub in advance, and post-draw changes are cross-checked | Not identical |
+| GitHub prediction code | TensorFlow Lottery Prediction | RNN/LSTM-based lotto number prediction code repository | Subject matter relates to lotto number prediction | Public prediction code only; not a structure for pre-draw external recordkeeping and post-draw change verification of recommended numbers | Not identical |
+| GitHub prediction code | Lottery Prediction with Machine Learning | Machine learning project for predicting Mega Millions and Powerball numbers | Subject matter relates to lotto/lottery number prediction | Code and model focused; prediction results are not anchored externally before the draw | Not identical |
+| GitHub prediction code | Loto_Ai_Prediction | Structure involving past data collection, LSTM model training, and prediction number output | Similar as AI-based number prediction | Not a verification framework involving pre-draw external disclosure of prediction results and GitHub URL anchoring | Not identical |
+| GitHub prediction code | LotteryPrediction | Repository with a lotto prediction program or prediction method guide | Subject matter relates to number prediction | Does not anchor service operation results in a public document before the draw | Not identical |
+| GitHub prediction code | Lottery-Predict | Flask-based lotto number prediction web app | Similar in number prediction and web service form | No structure for pre-draw external records, change history checking, or mutual cross-checking | Not identical |
+| GitHub prediction code | National Lottery Generator | App structure that analyzes past draw data and generates numbers | Similar as past data-based number generation | Does not verify recommended numbers through an external public document and GitHub commits | Not identical |
+| GitHub analysis app | Mega-Sena Analyzer | Brazil Mega-Sena analysis app that imports past data and performs statistical analysis and strategy generation | Similar as statistical lotto analysis | Not a framework for pre-draw external disclosure and post-draw change verification of recommended results | Not identical |
+| General prediction sites | UK49s / SA Lotto Prediction-related sites | Explain methods using past data analysis, Excel, or Google Sheets heat maps | Partly similar in using Google Sheets or statistical analysis | Google Sheets are used as analysis tools only; not a structure for pre-draw recommended number records and GitHub cross-verification | Not identical |
+| Mobile apps | Lotto Prediction Android app types | Apps providing lotto number prediction or generation functions | Similar in number recommendation and prediction functions | No confirmed public verification framework, external records, or change history cross-checking structure | Not identical |
+| Spreadsheet products | Lotto prediction spreadsheet types | Excel or Google Sheets templates for number analysis and prediction | Similar in potential Google Sheets usage | Personal analysis tools; not a structure for pre-draw external public records and GitHub anchoring | Not identical |
+| Patent / idea | KR20090129245A, Lottery Prediction Winning Number Provision System | Patent related to a lottery prediction service system providing multiple predicted number combinations | Similar in providing prediction numbers | Does not involve external public document records, GitHub commit history, or post-draw change verification | Not identical |
+| Chinese-language prediction code | LottoProphet | Chinese-language lottery prediction project using deep learning and conditional random fields for SSQ and DLT | Similar in lottery number prediction and analysis | Closer to a prediction model and analysis app; not a structure that records recommended numbers in Google documents before the draw and anchors URLs on GitHub | Not identical |
+| Chinese-language analysis app | Lottery Analysis / 彩票数据分析 | Python/Streamlit-based project that collects and analyzes Chinese welfare and sports lottery data and provides AI prediction functions | Similar in lottery data collection, statistical analysis, and AI prediction | Analysis and prediction platform; not a pre-draw external public record and GitHub cross-check verification framework | Not identical |
+| Chinese-language prediction system | gitmen-lottery / 彩票预测系统 | Web-service-style project using FastAPI, MySQL, Telegram integration, and Chinese lottery history lookup, prediction, and statistics | Similar in lottery prediction, statistics, and lookup system | No confirmed structure in which prediction results are recorded in an external public document in advance and verified through GitHub commit history | Not identical |
+| Chinese-language AI prediction code | Double-Color-Ball-AI | Chinese-language AI prediction project using multiple AI models and past-data strategies for Double Color Ball | Similar as AI-based lottery number prediction | Focused on AI prediction generation and data verification; not a public verification framework using Google document records and GitHub URL anchoring | Not identical |
+| Japanese-language prediction code | numbers4_lstm | Japanese-language project attempting to predict Japan Numbers4 winning numbers using LSTM and neural networks | Similar as number-selection lottery prediction | Prediction code focused; not a structure for pre-draw external disclosure of recommended numbers and post-draw change verification | Not identical |
+| Japanese-language analysis code | Rosyuku/loto6 | GitHub project for analyzing Japan Loto6 | Similar in lotto number analysis | Closer to analysis code or data disclosure; not a public verification framework that cross-checks Google documents and GitHub | Not identical |
+| Japanese-language analysis content | Loto6 statistical analysis tools and prediction content | Statistical analysis and prediction support content or tools for Loto6, Mini Loto, and Loto7 | Similar in Japanese lottery number analysis and prediction subject matter | Content or analysis tool type; not a verification structure that anchors service-recommended numbers in an external document before the draw | Not identical |
+| Spanish-language prediction code | ojaviva/lottery | Spanish-language project aiming to predict future lottery winning numbers using machine learning | Similar as a lottery number prediction model | Model development and prediction focused; no pre-draw external public records or post-draw change history verification structure | Not identical |
+| Spanish-language prediction tool | KinielaGPT | Prediction tool using match data, probabilities, and contextual analysis for Quiniela prediction | Similar as a prediction model and recommendation tool | Sports/Quiniela prediction tool; not a pre-draw external record verification structure for lotto recommended numbers | Not identical |
+| French/European prediction code | Loto_Ai_Prediction | Project predicting Loto numbers using machine learning methods such as LSTM | Similar in Loto number prediction and past data learning | Prediction code focused; not a framework verifying pre-draw recommended numbers through Google documents and GitHub records | Not identical |
+| Multilingual GitHub prediction group | GitHub lottery-prediction / loto topic projects | Numerous lottery, loto, and lotto prediction/analysis repositories exist across languages | Similar in showing that lottery prediction code and analysis attempts exist worldwide | Most are limited to code, models, or analysis disclosure and do not provide a structure for cross-checking pre-draw existence and post-draw changes through external records | Not identical |
 
 ※ Case names, repository names, search result screenshots, and access URLs for this comparison table are stored in a separate research log.  
-※ Detailed comparison materials for domestic similar services are stored in a separate internal research log to avoid publicly naming specific operators.
+※ Detailed comparison materials for domestic similar services are stored in a separate internal research log to avoid publicly identifying specific businesses.
 
 ---
 
-### 14-4. Summary of First Research Results
+### 14-4. Summary of First-Round Research Results
 
-In the first public web research, LOTTOi did not identify a structure completely identical to its own.
+The first-round public web research did not identify a structure completely identical to LOTTOi.
 
-In particular, no case was identified that satisfies all of the following conditions.
+In particular, no case was identified that met all of the following conditions.
 
-1. It provides recommended or generated numbers for a number-selection lottery.
+1. It provides recommended or generated numbers for a number-selection-based lotto or lottery.
 2. The recommended or generated numbers are finalized before the draw.
 3. The actual recommended or generated numbers are recorded in a Google document as an external public record.
-4. The corresponding Google document URL is first fixed on GitHub before the draw.
-5. After the draw, anyone can cross-check the Google document record and GitHub commit history.
-6. Through this, anyone can check the prior existence and post-draw change status of the recommended numbers.
+4. The corresponding Google document URL is anchored on GitHub before the draw.
+5. After the draw, anyone can cross-check the Google document records and GitHub commit history.
+6. Through this, the pre-draw existence of the recommended numbers and whether any post-draw changes occurred can be verified.
 
-The identified similar cases fall broadly into four categories.
+The identified similar cases can be broadly grouped into four categories.
 
-First, domestic and international lottery number recommendation and analysis service types.  
-These may provide past winning-number analysis, number recommendations, statistics, and in some cases result disclosure, but no structure was confirmed in which recommended numbers are recorded in an external document before the draw and a reference point is pre-fixed on GitHub for post-draw cross-checking.
+First, domestic and overseas lotto/lottery number recommendation and analysis service types.  
+These may provide past winning number analysis, number recommendation, statistical information, and in some cases result disclosure. However, no structure was identified in which recommended numbers are recorded in an external document before the draw and a reference point is anchored on GitHub in advance so that post-draw changes can be cross-checked.
 
-Second, lottery number prediction code.  
+Second, lotto/lottery number prediction code.  
 These mostly focus on predicting or generating numbers through AI, LSTM, machine learning, or statistical analysis.
 
-Third, lottery number analysis apps or web apps.  
-These provide past winning-number data analysis, number recommendation, number generation, statistical visualization, and similar features.
+Third, lotto/lottery number analysis apps or web apps.  
+These provide past winning number data analysis, number recommendation, number generation, and statistical visualization.
 
-Fourth, multilingual prediction and analysis projects from Chinese, Japanese, Spanish, French, and other language regions.  
-These are similar in that they relate to number-selection lottery prediction or analysis, but no pre-draw external public record and post-draw change-history verification structure was confirmed.
+Fourth, multilingual prediction and analysis projects in Chinese, Japanese, Spanish, French, and other language regions.  
+These are similar in that they involve number-selection lottery prediction or analysis, but no structure was identified for pre-draw external public records and post-draw change history verification.
 
-Therefore, under the first research criteria, LOTTOi’s structure is distinguished from existing similar cases as follows.
+Therefore, based on the first-round research, LOTTOi’s structure is distinguished from existing similar cases in the following way.
 
-> **Existing similar cases**  
-> Lottery number recommendation, number generation, statistical analysis, AI models, and prediction-code disclosure
+> **Existing Similar Cases**  
+> Focus on lottery number recommendation, number generation, statistical analysis, AI models, and prediction code disclosure
 >
 > **LOTTOi**  
-> A structure that cross-checks, through an external public document and GitHub commit history,  
+> A structure that cross-checks, through external public documents and GitHub commit history,  
 > whether recommended numbers actually existed before the draw  
 > and whether they were changed after the draw
 
@@ -532,39 +534,39 @@ Therefore, under the first research criteria, LOTTOi’s structure is distinguis
 
 ### 14-5. Limitations of the Research Results
 
-This research is a first-stage review based on publicly available web data.
+This research is a first-round investigation based on publicly available web materials.
 
 It has the following limitations.
 
-1. Private services, closed communities, and paid members-only materials may be excluded from the scope of review.
-2. Past services or closed websites not exposed in search engines may be omitted.
-3. This research does not completely cover every national language region.
-4. The review centered on publicly accessible materials including Google, GitHub, GitLab, patent materials, and search terms in Korean, English, Chinese, Japanese, Spanish, French, and German.
-5. For domestic similar services, the review used service-type categories such as lottery number recommendation and analysis services rather than publicly naming specific operators. Individual service names, URLs, screenshots, and related materials are stored in a separate internal research log.
-6. The phrase “world-first-level” is used only in a limited sense based on the judgment that no identical prior case was identified under this research standard.
-7. Even though Chinese, Japanese, and European-language search terms were included, this does not completely cover each country’s closed services, app-market internal descriptions, paid materials, or deleted past pages.
+1. Private services, closed communities, and paid member-only materials may be excluded from the scope of confirmation.
+2. Past services or closed websites that are not exposed through search engines may be omitted.
+3. The research does not completely cover every language region and country.
+4. The research focused on publicly accessible materials, including Google, GitHub, patent materials, and search terms in Korean, English, Chinese, Japanese, Spanish, French, and German.
+5. The comparison of domestic similar services was conducted by reviewing lotto number recommendation and analysis service types, rather than publicly identifying specific businesses. Individual service names, URLs, screenshots, and related details are stored in a separate internal research log.
+6. The expression “world-first-level” is used in a limited sense based on the fact that an identical prior case was not identified within the scope of this research.
+7. Even though Chinese, Japanese, and European-language search terms were included, the research does not fully cover closed services in each country, app market-only descriptions, paid materials, or deleted past pages.
 
-Therefore, LOTTOi does not use “world first” as an absolute or definitive expression. Instead, it limits the expression as follows.
+Therefore, rather than using “world’s first” as an absolute or definitive expression, LOTTOi limits the explanation as follows based on the scope of this research and the characteristics of its public verification structure.
 
-> In the field of number-selection lottery number recommendation/generation services,  
-> LOTTOi operates a Google-GitHub cross-check public number verification structure  
-> for which no identical prior case has been identified under publicly available web research,  
-> and regards it as a world-first-level external public verification framework.
+> In the field of number-selection-based lotto and lottery number recommendation/generation services,  
+> LOTTOi operates a Google·GitHub cross-checkable public number verification structure  
+> for which no identical prior case has been identified through public web research,  
+> and describes it as a world-first-level external public verification framework.
 
-This expression does not mean winning probability, prediction performance, profit, or result guarantee.  
-It is a judgment regarding a public verification design method that combines pre-draw records with an external verification standard.
+This expression does not imply any guarantee of winning probability, prediction performance, profit, or results.  
+It is an explanation of a public verification design method that combines pre-draw records with external verification standards.
 
 ---
 
 ## 15. Expandability of the Public Verification Framework
 
-LOTTOi’s current public verification framework is centered on Google document records and GitHub URL pre-fixing.
+LOTTOi’s current public verification framework is operated mainly through Google document records and GitHub URL anchoring.
 
-This whitepaper explains the operating standards and verification methods of the currently applied public verification framework.
+This whitepaper explains the operating standards and verification methods of the public verification framework currently applied by LOTTOi.
 
-Future expansion and application methods will be reviewed based on operational stability, user comprehensibility, and the reliability of external records.
+Whether and how to expand the structure will be reviewed based on operating stability, user understanding, and the reliability of external records.
 
-If expansion is implemented, LOTTOi will continue to improve the public verification framework based on the reliability of external records, user verifiability, and operational stability.
+If the framework is expanded, LOTTOi will continue to improve the public verification framework based on the reliability of external records, user verifiability, and operating stability.
 
 ---
 
@@ -572,62 +574,61 @@ If expansion is implemented, LOTTOi will continue to improve the public verifica
 
 This whitepaper was prepared for the following purposes.
 
-- Explaining a structure that allows confirmation of the prior existence of generated-number records
-- Explaining operating standards for the external public verification method
-- Explaining the operating method of the public verification framework
-- Separating the roles of Google documents and GitHub
-- Providing a standard that anyone can directly verify regardless of service usage
-- Explaining the technical design intended to reduce post-draw manipulation concerns
-- Explaining the scope and limitations of the phrase “world-first-level”
+- To explain the structure for checking the pre-draw existence of generated number records
+- To explain the operating standards of the external public verification method
+- To explain the operation of the public verification framework
+- To distinguish the roles of Google documents and GitHub
+- To provide standards that anyone can directly verify, regardless of whether they use the service
+- To explain the technical design intended to reduce post-draw manipulation concerns
+- To explain the scope and limitations of the expression “world-first-level”
 
 This document does not guarantee winning probability, prediction performance, profit, or results.  
-It must not be interpreted as an investment, prediction, or guarantee document under any circumstances.
+Under no circumstances should it be interpreted as an investment, prediction, or guarantee document.
 
-Also, the phrase “world-first-level” is LOTTOi’s judgment regarding a structure for which no identical prior case has been identified under publicly available web research. It is not a statement that definitively proves the nonexistence of every private case in the world.
+In addition, the expression “world-first-level” is a limited explanation of a structure for which no identical prior case has been identified through public web research. It is not a statement that no private case exists anywhere in the world.
 
 ---
 
-## 17. Closing
+## 17. Closing Statement
 
-[LOTTOi](https://www.lottoi.kr) intended to leave a record standard that can verify results before talking about the results themselves.
+[LOTTOi](https://www.lottoi.kr) aims to leave behind a verification standard before speaking about results.
 
-The purpose of publishing LOTTOi’s public verification whitepaper is one thing.
+LOTTOi’s public verification whitepaper has one goal.
 
-LOTTOi aims for the public verification framework it designed to become a more transparent standard for lottery services and to contribute to a lottery market with fewer manipulation concerns.
+It is to help the public verification framework we designed become a more transparent standard for lottery-related services and contribute to a lottery market without manipulation concerns.
 
-LOTTOi records generated numbers externally before the draw and operates a public verification framework that links those records again through an external public means for verification.
+LOTTOi records generated numbers externally before the draw and operates a public verification framework so that those records can be connected and verified through external public record methods.
 
-LOTTOi hopes this model will go beyond a differentiating factor for one service and become a trust standard for lottery-related services as a whole.
+We hope this model will go beyond the differentiation of a single service and become a trust standard for lottery-related services as a whole.
 
-For a transparent environment that helps users make rational choices, LOTTOi will continue to treat record standards as important.
+To support a transparent environment that helps users make rational choices, LOTTOi will continue to treat record standards as important.
 
 ---
 
 ## Summary
 
-> **The Google document stores the actual generated-number record.**  
-> **GitHub first fixes the Google document URL before the draw.**  
-> **After the draw, anyone can cross-check the two records to verify whether post-draw changes occurred.**
+> **Actual generated number records are stored in Google documents.**  
+> **The corresponding Google document URL is anchored on GitHub before the draw.**  
+> **After the draw, anyone can compare the two records and check whether any post-draw change occurred.**
 
-LOTTOi regards this structure, for which no identical prior case has been identified under publicly available web research, as a world-first-level external public verification framework.
+Based on public web research, LOTTOi has not identified an identical prior case to date, and therefore describes this structure as a world-first-level external public verification framework based on the research results and its operating structure.
 
 ---
 
 ## Key Timeline
 
-| Date | Details |
+| Date | Description |
 |---|---|
 | 2025. 02. 08. | Applied the Google-based external public verification method |
-| 2026. 01. 29. | Applied the external public verification framework that first fixes the Google document URL on GitHub before the draw |
+| 2026. 01. 29. | Applied the external public verification framework that anchors the Google document URL on GitHub before the draw |
 | 2026. 02. 19. | Published the public verification whitepaper |
 
 ---
 
 ## Short Introduction
 
-[LOTTOi](https://www.lottoi.kr) has applied a Google-based external public verification method since February 8, 2025.
+LOTTOi has applied a Google-based external public verification method since February 8, 2025.
 
-Since January 29, 2026, LOTTOi has operated an external public verification framework in which the Google document URL is first fixed on GitHub before the draw, allowing anyone to cross-check the Google document record and GitHub commit history after the draw.
+Since January 29, 2026, LOTTOi has operated an external public verification framework that anchors the Google document URL on GitHub before the draw, allowing anyone to cross-check Google document records and GitHub commit history after the draw.
 
-Based on publicly available web research, LOTTOi has not identified an identical prior case, and therefore regards this structure as a world-first-level external public verification framework.
-
+Based on public web research, LOTTOi has not identified an identical prior case to date, and therefore describes this structure as a world-first-level external public verification framework based on the research results and its operating structure.
